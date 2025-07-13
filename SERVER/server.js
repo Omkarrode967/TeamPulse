@@ -9,7 +9,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const projectRoutes = require('./routes/projects');
 const taskRoutes = require('./routes/task');
-const ticketRoutes = require('./routes/ticket');
 const dashboardRoutes = require('./routes/dashboard');
 const authMiddleware = require('./middleware/authMiddleware');
 const app = express()
@@ -46,7 +45,6 @@ app.use(bodyParser.json())
 
 app.use("/api/projects", authMiddleware, projectRoutes);
 app.use("/api/tasks", authMiddleware, taskRoutes);
-app.use('/api/tickets', authMiddleware, ticketRoutes);
 app.use('/api',authMiddleware, dashboardRoutes);
 
 app.get('/', (req, res) => {

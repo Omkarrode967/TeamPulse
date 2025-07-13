@@ -7,7 +7,6 @@ A modern project management application built with React and Node.js.
 - User authentication and authorization
 - Project creation and management
 - Task management with Kanban board
-- Ticket system for bug tracking
 - Real-time dashboard with analytics
 
 ## Tech Stack
