@@ -1,0 +1,9 @@
+{
+  "name": "teampulse",
+  "version": "1.0.0",
+  "description": "A modern project management application",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
